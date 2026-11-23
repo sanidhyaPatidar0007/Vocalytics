@@ -1,0 +1,23 @@
+# Voice-Enabled Data Analyst SaaS: runtime + test dependencies.
+# Pinned to the newest releases that still support Python 3.10 (the minimum
+# version in the specification). Verified to resolve on Python 3.10 and 3.13.
+streamlit==1.65.0
+pandas==2.3.3
+numpy==2.2.6
+pyarrow==25.0.1
+SQLAlchemy==2.0.58
+plotly==7.1.0
+openpyxl==3.1.5
+xlrd==2.0.2
+defusedxml==0.7.1
+argon2-cffi==25.1.0
+python-dotenv==1.2.4
+SpeechRecognition==3.17.0
+psutil==7.2.2
+requests==2.34.2
+# User regular expressions in data cleaning: per-match timeouts and GIL release.
+# 2026.9.29 is the newest release with Python 3.10 wheels.
+regex==2026.9.29
+
+# Tests (the documented setup runs `pytest -q` right after installing this file)
+pytest==9.2.0

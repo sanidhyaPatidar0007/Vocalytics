@@ -1,0 +1,5 @@
+# Optional extras. Install only the ones you need:
+#   pip install -r requirements-optional.txt
+#
+# Offline speech recognition (also needs a Vosk model folder, see README).
+vosk==0.3.45

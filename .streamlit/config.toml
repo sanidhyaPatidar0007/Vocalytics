@@ -1,0 +1,30 @@
+[server]
+# Only this computer can open the app. To share it on a trusted network, set
+# address = "0.0.0.0" (and use HTTPS plus a firewall rule).
+address = "localhost"
+# Must be at least the largest plan upload limit (MB). The application enforces
+# the per-plan limit itself; this only stops the browser upload earlier.
+maxUploadSize = 1024
+maxMessageSize = 1024
+enableXsrfProtection = true
+headless = true
+
+[browser]
+# No usage statistics leave this machine.
+gatherUsageStats = false
+
+[client]
+# Users see friendly messages; stack traces stay in logs/app.log.
+showErrorDetails = "none"
+toolbarMode = "minimal"
+
+[runner]
+fastReruns = true
+
+[theme]
+base = "light"
+primaryColor = "#1F5F8B"
+backgroundColor = "#F7F9FB"
+secondaryBackgroundColor = "#E9EEF3"
+textColor = "#16212B"
+font = "sans-serif"

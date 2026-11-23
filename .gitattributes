@@ -1,0 +1,17 @@
+# Keep line endings consistent (LF) in the repository and in release archives.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.xlsx binary
+*.xls binary
+*.parquet binary
+*.db binary
+*.wav binary
+*.zip binary
+# Windows batch files need CRLF; shell scripts need LF.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.sh text eol=lf
